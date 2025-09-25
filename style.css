@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background-color: #f5f5f5;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input, form select, form button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.relatorio-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}

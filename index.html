@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Controle de Acesso</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Controle de Acesso</h1>
+
+  <form id="acessoForm">
+    <label>Nome:</label>
+    <input type="text" id="nome" required>
+
+    <label>CPF ou Documento:</label>
+    <input type="text" id="documento" required>
+
+    <label>Tipo:</label>
+    <select id="tipo">
+      <option value="Funcionário">Funcionário</option>
+      <option value="Visitante">Visitante</option>
+    </select>
+
+    <label>Motivo / Cargo:</label>
+    <input type="text" id="motivo" required>
+
+    <label>Ação:</label>
+    <select id="acao">
+      <option value="Entrada">Entrada</option>
+      <option value="Saída">Saída</option>
+    </select>
+
+    <button type="submit">Registrar</button>
+  </form>
+
+  <button class="relatorio-btn" onclick="gerarRelatorio()">📄 Gerar Relatório</button>
+
+  <h2>Registros</h2>
+  <table id="tabelaRegistros">
+    <thead>
+      <tr>
+        <th>Entrada</th>
+        <th>Nome</th>
+        <th>Documento</th>
+        <th>Tipo</th>
+        <th>Motivo</th>
+        <th>Saída</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
